@@ -1,0 +1,75 @@
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin mobil
+    @media only screen and (max-width: 575.98px)
+        @content
+
+// Small devices (landscape phones, less than 768px)
+@mixin mobil2
+    @media only screen and (min-width: 576px) and (max-width: 767.98px)
+        @content
+
+// Medium devices (tablets, less than 992px)
+@mixin tablet
+    @media only screen and (min-width: 768px) and (max-width: 991.98px)
+        @content
+
+// Large devices (desktops, less than 1200px)
+@mixin tablet2
+    @media only screen and (min-width: 992px) and (max-width: 1199.98px)
+        @content
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin escritorio
+    @media only screen and (min-width: 1200px) and (max-width: 1399.98px)
+        @content
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin escritorio2
+    @media only screen and (min-width: 1400px) and (max-width: 1823.98px)
+        @content
+
+// XX-Large devices (larger desktops)
+@mixin tv
+    @media only screen and (min-width: 1824px)  
+        @content
+
+
+
+
+body
+    background-image: url("/img/perfil/32.jpg")
+    font-family: "Open Sans", Helvetica, sans-serif
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    letter-spacing: 1pt 
+    font-weight: lighter
+    @include mobil
+        background-image: url("/img/perfil/22.jpg")
+    @include mobil2
+        background-image: url("/img/perfil/22.jpg") 
+    @include tablet
+        background-image: url("/img/perfil/22.jpg")
+    @include tablet2
+        background-image: url("/img/perfil/22.jpg")
+
+.img-perfil
+    border-radius: 50%    
+    width: 80%
+    margin: auto
+    padding: 1em
+    max-width: 400px
+    margin-top: 30px10px
+.card
+    background-color: rgba(0, 0, 0, 0.6)
+    margin-top: 30px
+    color: whitesmoke
+    opacity: 98%
+
+.card-body  
+    margin: 5px
+    letter-spacing: 1pt 
+    font-weight: lighter
+    
+.card-title
+
